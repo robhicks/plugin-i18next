@@ -1,18 +1,18 @@
 /*
   i18next text translation plugin.
-  Assumes i18next has been loaded and configured.
+  Assumes i18next is loaded globally and is configured.
 */
 exports.translate = function(load) {
   if (!window.i18next || !window.i18next.t) throw new Error('i18next not loaded');
-  let source = load.source;
-  let pattern = /{{.+}}/g;
-  let keys = [];
-  let match;
+  var source = load.source;
+  var pattern = /{{.+}}/g;
+  var keys = [];
+  var match;
   while((match = pattern.exec(source)) !== null) {
     keys.push({name: match[0], translation: i18next.t(match[0].replace('{{','').replace('}}',''))});
   }
 
-  keys.forEach(key => {
+  keys.forEach(function(key) {
     source = source.replace(key.name, key.translation);
   })
 

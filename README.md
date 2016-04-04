@@ -1,7 +1,7 @@
-text
-===========
+i18next Translation Plugin for SystemJS
+=======================================
 
-A SystemJS plugin that performs [i18next](http://i18next.com/) translations on text when it is loaded. The resulting text is loaded from the file into the variable as a string.
+A SystemJS plugin that performs translations [i18next](http://i18next.com/) on text when it is loaded. The resulting translated text is loaded from the file into the variable as a string.
 
 Installing
 ---
