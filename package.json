@@ -1,14 +1,20 @@
 {
-  "name": "systemjs-plugin-text",
-  "version": "0.0.2",
-  "main": "text",
+  "name": "systemjs-plugin-i18next",
+  "version": "0.0.1",
+  "main": "i18next",
   "repository": {
     "type": "git",
-    "url": "http://github.com/systemjs/plugin-text.git"
+    "url": "https://github.com/robhicks/plugin-i18next.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/systemjs/plugin-text/issues"
+    "url": "https://github.com/robhicks/plugin-i18next/issues"
   },
-  "homepage": "https://github.com/systemjs/plugin-text"
+  "homepage": "https://github.com/robhicks/plugin-i18next",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "i18next": "^2.4.1",
+    "systemjs": "^0.19.25"
+  }
 }

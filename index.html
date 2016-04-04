@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script src="./node_modules/i18next/i18next.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+  </body>
+  <script>
+  i18next.init({
+    lng: 'en',
+    resources: {
+      en: {
+        translation: {
+          "heading_1": "Heading One",
+          "grapes": "lucious dark grapes",
+          "brown_fox_falls": "Failing to reach the grapes, the fox fell back to earth, landing with a big frump instead of landing adeptly on his feet."
+        }
+      }
+    }
+  });
+  System.import('text.html!i18ntext.js').then(console.log.bind(console));
+  </script>
+</html>
