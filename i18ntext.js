@@ -5,11 +5,11 @@
 exports.translate = function(load) {
   if (!window.i18next || !window.i18next.t) throw new Error('i18next not loaded');
   var source = load.source;
-  var pattern = /{{.+}}/g;
+  var pattern = /t\(.+\)/g;
   var keys = [];
   var match;
   while((match = pattern.exec(source)) !== null) {
-    keys.push({name: match[0], translation: i18next.t(match[0].replace('{{','').replace('}}',''))});
+    keys.push({name: match[0], translation: i18next.t(match[0].replace('t(','').replace(')',''))});
   }
 
   keys.forEach(function(key) {
