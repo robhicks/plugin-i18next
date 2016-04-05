@@ -12,7 +12,7 @@ exports.translate = function(load) {
     keys.push({name: match[0], translation: i18next.t(match[0].replace('t(','').replace(')',''))});
   }
 
-  keys.forEach(function(key) {
+  keys.forEach(key => {
     source = source.replace(key.name, key.translation);
   })
 
