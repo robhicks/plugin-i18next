@@ -1,3 +1,4 @@
+"use strict";
 /*
   i18next text translation plugin.
   Assumes i18next is configured and available for import.
