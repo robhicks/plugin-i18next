@@ -4,27 +4,34 @@
     <meta charset="utf-8">
     <title></title>
     <script src="./node_modules/systemjs/dist/system.js"></script>
-    <script src="./node_modules/i18next/i18next.js" charset="utf-8"></script>
+    <script src="./config.js"></script>
   </head>
   <body>
     <div id="target"></div>
   </body>
   <script>
-  System.config({map: {i18nt: './i18nt.js'}});
-  i18next.init({
-    lng: 'en',
-    resources: {
-      en: {
-        translation: {
-          "heading_1": "Hello World!",
-          "grapes": "lucious dark grapes",
-          "brown_fox_falls": "Failing to reach the grapes, the fox fell back to earth, landing with a big frump."
+
+  System.import('i18next')
+    .then(function(i18next) {
+      i18next.init({
+        lng: 'en',
+        resources: {
+          en: {
+            translation: {
+              "heading_1": "Hello World!",
+              "grapes": "lucious dark grapes",
+              "brown_fox_falls": "Failing to reach the grapes, the fox fell back to earth, landing with a big frump."
+            }
+          }
         }
-      }
-    }
-  });
-  System.import('text.html!i18nt').then(translatedText => {
-    document.getElementById('target').innerHTML = translatedText
-  });
+      });
+    })
+    .then(function() {
+      System.import('test.html!i18nt').then(translatedText => {
+        document.getElementById('target').innerHTML = translatedText
+      });
+    })
+
+
   </script>
 </html>

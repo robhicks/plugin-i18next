@@ -1,6 +1,6 @@
 {
   "name": "plugin-i18nt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "i18nt.js",
   "registry": "github",
   "repository": {
@@ -12,10 +12,14 @@
     "url": "https://github.com/robhicks/plugin-i18nt/issues"
   },
   "homepage": "https://github.com/robhicks/plugin-i18nt",
-  "dependencies": {
-    "i18next": "npm:i18next@^2.4.1"
-  },
-  "devDependencies": {
-    "systemjs": "^0.19.25"
+  "devDependencies": {},
+  "jspm": {
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "i18next": "npm:i18next@^2.4.1",
+      "systemjs": "^0.19.25"
+    }
   }
 }
