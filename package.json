@@ -1,6 +1,6 @@
 {
   "name": "plugin-i18nt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "i18nt.js",
   "registry": "github",
   "repository": {
@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/robhicks/plugin-i18nt",
   "dependencies": {
-    "i18next": "^2.4.1"
+    "i18next": "npm:i18next@^2.4.1"
   },
   "devDependencies": {
     "systemjs": "^0.19.25"
