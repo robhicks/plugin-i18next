@@ -11,16 +11,16 @@ For SystemJS use, locate `i18next.js` in the application, and then locate it wit
 ```javascript
 System.config({
   map: {
-    text: 'path/to/i18next.js'
+    text: 'path/to/i18nt.js'
   }
 });
 ```
 
-For installing with jspm, run `jspm install i18next`.
+For installing with jspm, run `jspm install i18nt`.
 
 Basic Use
 ---
 
 ```javascript
-import myTranslatedText from './mytext.html!i18next';
+import myTranslatedText from './mytext.html!i18nt';
 ```

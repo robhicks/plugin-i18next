@@ -1,17 +1,17 @@
 {
-  "name": "plugin-i18next",
+  "name": "plugin-i18nt",
   "version": "0.1.0",
-  "main": "i18next.js",
+  "main": "i18nt.js",
   "registry": "github",
   "repository": {
     "type": "git",
-    "url": "https://github.com/robhicks/plugin-i18next.git"
+    "url": "https://github.com/robhicks/plugin-i18nt.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robhicks/plugin-i18next/issues"
+    "url": "https://github.com/robhicks/plugin-i18nt/issues"
   },
-  "homepage": "https://github.com/robhicks/plugin-i18next",
+  "homepage": "https://github.com/robhicks/plugin-i18nt",
   "dependencies": {
     "i18next": "^2.4.1"
   },
