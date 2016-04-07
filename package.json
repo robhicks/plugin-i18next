@@ -1,6 +1,6 @@
 {
   "name": "plugin-i18nt",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "i18nt.js",
   "registry": "github",
   "repository": {
