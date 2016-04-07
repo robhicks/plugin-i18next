@@ -1,1 +1,0 @@
-module.exports = require("npm:i18next@2.4.1/index.js");
